@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <h1>Bouman-Johnson Housing Project</h1>
+    <form method="POST">
+        <!-- "required": ["area", "property-type", "rooms-number", "zip-code"], -->
+        <label for="name">Enter the surface </label>
+        <input type="text" name="name" id="surface" required><br>
+
+        <label for="name">Enter the property-type </label><br>
+        <!-- <input type="text" name="name" id="property-type" required><br> -->
+        <input type="radio" id="APARTMENT" name="drone" value="APARTMENT"> APARTMENT<br>
+        <input type="radio" id="HOUSE" name="drone" value="HOUSE"> HOUSE<br>
+        <input type="radio" id="OTHERS" name="drone" value="OTHERS"> OTHERS<br>
+
+        <label for="name">Enter the rooms-number </label>
+        <input type="text" name="name" id="rooms-number" required> <br>
+
+        <label for="name">Enter the postal code </label>
+        <input type="text" name="name" id="postalCode" required> <br>
+
+        <input type="submit" id="buttonAPI" value="click here"> 
+    
+    </form>
+
+    <!--Display city-->
+    <p id="displaySurface"></p>
+
+    <!--Display PropertyType-->
+    <p id="displayPropertyType"></p>
+    
+    <!--Display RoomNumber-->
+    <p id="displayRoomNumber"></p>
+
+    
+    <!--Display PostalCode-->
+    <p id="displayPostalCode"></p>
+    
+</body>
+<script src="exoAPI.js"></script>
+</html>
