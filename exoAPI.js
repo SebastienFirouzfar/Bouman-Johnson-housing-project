@@ -38,7 +38,17 @@ document.getElementById("buttonAPI").addEventListener("click", function (event) 
             console.log(data.prediction)
             let propertyValue = data.prediction.slice(-18, -9);
             console.log(propertyValue)
-            pricePrediction.innerHTML = "Le prix d'estimation est de " + propertyValue; 
+
+             //conversion en euro
+             const euro = new Intl.NumberFormat('fr-FR', {
+                style: 'currency',
+                currency: 'EUR',
+                minimumFractionDigits: 2
+              });
+
+            pricePrediction.innerHTML = "Le prix d'estimation est de " + euro.format(propertyValue); 
+            
+            
             
             //displaySurface.innerHTML = ;
             // displayPropertyType.innerHTML = data.properties.data.properties;

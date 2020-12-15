@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,45 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">
 </head>
+
 <body>
     <h1>Bouman-Johnson Housing Project</h1>
-    <form method="POST" >
-        <!-- "required": ["area", "property-type", "rooms-number", "zip-code"], -->
-        <label for="name">Enter the surface </label>
-        <input type="text" name="name" id="surface" required><br>
+    <div id="blockFormulaire">
+        <form method="POST">
+            <!-- "required": ["area", "property-type", "rooms-number", "zip-code"], -->
+            <label for="name">Enter the surface </label>
+            <input type="text" name="name" id="surface" required><br>
 
-        <label for="name">Enter the property-type </label><br>
-        <!-- <input type="text" name="name" id="property-type" required><br> -->
-        <!-- <input type="radio" id="APARTMENT" name="drone" value="APARTMENT"> APARTMENT<br>
+            <label for="name">Enter the property-type </label>
+            <!-- <input type="text" name="name" id="property-type" required><br> -->
+            <!-- <input type="radio" id="APARTMENT" name="drone" value="APARTMENT"> APARTMENT<br>
         <input type="radio" id="HOUSE" name="drone" value="HOUSE"> HOUSE<br>
         <input type="radio" id="OTHERS" name="drone" value="OTHERS"> OTHERS<br> -->
 
-        <select id="selectHouse">
-            <option value="APARTMENT">APARTMENT</option>
-            <option value="HOUSE">HOUSE</option>
-            <option value="OTHERS">OTHERS</option>
-        </select><br>
+            <select id="selectHouse">
+                <option value="APARTMENT">APARTMENT</option>
+                <option value="HOUSE">HOUSE</option>
+                <option value="OTHERS">OTHERS</option>
+            </select><br>
 
-        <label for="name">Enter the rooms-number </label>
-        <input type="text" name="name" id="rooms-number" required> <br>
+            <label for="name">Enter the rooms-number </label>
+            <input type="text" name="name" id="rooms-number" required> <br>
 
-        <label for="name">Enter the postal code </label>
-        <input type="text" name="name" id="postalCode" required> <br>
+            <label for="name">Enter the postal code </label>
+            <input type="text" name="name" id="postalCode" required> <br>
 
-        <input type="submit" id="buttonAPI" value="click here"> 
-    
-    </form>
+            <!-- <input type="submit" id="buttonAPI" value="click here"> -->
+            <button type="button" id="buttonAPI" class="btn btn-primary btn-sm">Small button</button>
+
+        </form>
+    </div>
 
     <!--Display city-->
-    <p id="displayPrice"></p>
+    <h3 id="displayPrice"></h3>
 
-   
-    
+
+
 </body>
 <script src="exoAPI.js"></script>
+
 </html>
