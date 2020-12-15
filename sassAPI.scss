@@ -1,12 +1,17 @@
+$padding10 : 10px;
 
 h1{
     text-align: center;
 }
 
 form{
-    padding: 10px;
+    padding: $padding10;
 }
 
 #displaySurface{
-    padding: 10px;
+    padding: $padding10;
+}
+
+#displayPrice{
+    padding: $padding10;
 }

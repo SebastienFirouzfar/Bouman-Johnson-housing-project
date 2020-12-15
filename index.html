@@ -9,16 +9,22 @@
 </head>
 <body>
     <h1>Bouman-Johnson Housing Project</h1>
-    <form method="POST">
+    <form method="POST" >
         <!-- "required": ["area", "property-type", "rooms-number", "zip-code"], -->
         <label for="name">Enter the surface </label>
         <input type="text" name="name" id="surface" required><br>
 
         <label for="name">Enter the property-type </label><br>
         <!-- <input type="text" name="name" id="property-type" required><br> -->
-        <input type="radio" id="APARTMENT" name="drone" value="APARTMENT"> APARTMENT<br>
+        <!-- <input type="radio" id="APARTMENT" name="drone" value="APARTMENT"> APARTMENT<br>
         <input type="radio" id="HOUSE" name="drone" value="HOUSE"> HOUSE<br>
-        <input type="radio" id="OTHERS" name="drone" value="OTHERS"> OTHERS<br>
+        <input type="radio" id="OTHERS" name="drone" value="OTHERS"> OTHERS<br> -->
+
+        <select id="selectHouse">
+            <option value="APARTMENT">APARTMENT</option>
+            <option value="HOUSE">HOUSE</option>
+            <option value="OTHERS">OTHERS</option>
+        </select><br>
 
         <label for="name">Enter the rooms-number </label>
         <input type="text" name="name" id="rooms-number" required> <br>
@@ -31,17 +37,9 @@
     </form>
 
     <!--Display city-->
-    <p id="displaySurface"></p>
+    <p id="displayPrice"></p>
 
-    <!--Display PropertyType-->
-    <p id="displayPropertyType"></p>
-    
-    <!--Display RoomNumber-->
-    <p id="displayRoomNumber"></p>
-
-    
-    <!--Display PostalCode-->
-    <p id="displayPostalCode"></p>
+   
     
 </body>
 <script src="exoAPI.js"></script>
