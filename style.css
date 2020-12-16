@@ -1,5 +1,6 @@
 h1 {
   text-align: center;
+  color: white;
 }
 
 form {
@@ -27,7 +28,7 @@ body {
 }
 
 #blockFormulaire {
-  box-shadow: 8px 8px 12px #000203, -8px -8px 12px #000203;
+  box-shadow: 0px 8px 12px rgba(13, 13, 0, 0.3), -8px -8px 12px rgba(13, 13, 0, 0.3);
   margin: 15px 15px;
   position: absolute;
   left: 5%;
