@@ -34,7 +34,9 @@ document.getElementById("buttonAPI").addEventListener("click", function (event) 
         .then(response => response.json())
         //.then(contents => console.log(contents))
         .then((data) => {
-            let pricePrediction = document.getElementById("displayPrice")
+            let pricePrediction = document.getElementById("displayPrice") 
+            
+            //price prediction
             console.log(data.prediction)
             let propertyValue = data.prediction.slice(-18, -9);
             console.log(propertyValue)
