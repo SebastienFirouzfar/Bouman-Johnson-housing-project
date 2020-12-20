@@ -11,7 +11,7 @@ document.getElementById("buttonAPI").addEventListener("click", function (event) 
 
     //Avoir les données dans l'api 
     let data = {
-        data: { // "required": ["data"], se trouve dans l'api 
+        data: { // "required": ["data"] data, se trouve dans l'api 
             "area": displaySurface,
             "property-type": displayPropertyType,
             "rooms-number": displayRoomNumber,

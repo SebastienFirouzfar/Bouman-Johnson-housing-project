@@ -49,10 +49,4 @@ body {
   margin-bottom: 5px;
 }
 
-@media screen and (max-width: 980px) {
-  body {
-    background-image: url("img/IFI-Immobilier-1.jpg");
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
